@@ -18,9 +18,15 @@ class TodoDetails extends StatelessWidget {
       ),
       body: InkWell(
         child: Card(
-          child: Padding(padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
+          margin: const EdgeInsetsDirectional.only(start: 2),
+          elevation: 100,
+          shadowColor: Colors.pink,
+          shape: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(40),
+              borderSide: const BorderSide(color: Colors.red)
+          ),
+          child: Padding(padding: const EdgeInsets.symmetric(horizontal: 21, vertical: 40),
           child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Align(
                 alignment: Alignment.topLeft,
@@ -30,9 +36,9 @@ class TodoDetails extends StatelessWidget {
                     FontWeight.bold,
                     fontSize: 20)),
               ),
-              const Padding(padding: EdgeInsets.symmetric(vertical: 6, horizontal: 2),
+              const Padding(padding: EdgeInsets.symmetric(vertical: 6),
                   child: Divider(
-                    thickness: 1,
+                    thickness: 2,
               )),
               Align(
                 alignment: Alignment.topLeft,
@@ -41,9 +47,9 @@ class TodoDetails extends StatelessWidget {
                     fontWeight: FontWeight.bold,
                     fontSize: 20)),
               ),
-              const Padding(padding: EdgeInsets.symmetric(vertical: 6, horizontal: 2),
+              const Padding(padding: EdgeInsets.symmetric(vertical: 6),
                   child: Divider(
-                    thickness: 1,
+                    thickness: 2,
                   )),
               Align(
                 alignment: Alignment.topLeft,
@@ -54,7 +60,7 @@ class TodoDetails extends StatelessWidget {
               ),
               const Padding(padding: EdgeInsets.symmetric(vertical: 6, horizontal: 2),
                   child: Divider(
-                    thickness: 1,
+                    thickness: 2,
                   )),
               Align(
                 alignment: Alignment.topLeft,
